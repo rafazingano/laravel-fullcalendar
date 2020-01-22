@@ -1,5 +1,6 @@
 <?php namespace ConfrariaWeb\Fullcalendar;
 
+use Carbon\Carbon;
 use Illuminate\Support\Collection;
 
 class EventCollection
@@ -39,9 +40,7 @@ class EventCollection
             'start' => $event->getStart()->format('c'),
             'end' => $event->getEnd()->format('c'),
         ];
-
         $eventOptions = method_exists($event, 'getEventOptions') ? $event->getEventOptions() : [];
-
         return array_merge($eventArray, $eventOptions, $customAttributes);
     }
 
