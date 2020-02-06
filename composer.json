@@ -1,5 +1,6 @@
 {
     "name": "confrariaweb/laravel-fullcalendar",
+    "version": "dev-master",
     "description": "Laravel package to implement the FullCalendar.io",
     "keywords": [
         "fullcalendar",
